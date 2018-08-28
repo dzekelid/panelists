@@ -8,8 +8,8 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28873-www-
 x-kinRank: "7"
 x-alexaRank: "7271"
 tags: Panelists
-created: "2018-08-26"
-modified: "2018-08-26"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/panelists/master/_listings/logmein/apis.md
 specificationVersion: "0.14"
 apis:
@@ -26,6 +26,17 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/panelists/master/_listings/logmein/organizerkeywebinarswebinarkeypanelists-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/panelists/master/_listings/logmein/organizerkeywebinarswebinarkeypanelists-get-openapi.md
+- name: GoToWebinar API - Create Panelists
+  x-api-slug: organizerkeywebinarswebinarkeypanelists-post
+  description: Create panelists.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28873-www-logmeininc-com.jpg
+  humanURL: http://www.LogMeInInc.com
+  baseURL: https://api.getgo.com//G2W/rest/organizers
+  tags: SaaS, Technology, Enterprise, Voice, Videoconferencing, Audio, Webinars, Relative
+    Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/panelists/master/_listings/logmein/organizerkeywebinarswebinarkeypanelists-post-openapi.md
 x-common:
 - type: x-github
   url: https://github.com/logmein

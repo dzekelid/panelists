@@ -7,8 +7,8 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/731-gotome
 x-kinRank: "7"
 x-alexaRank: "7422"
 tags: Panelists
-created: "2018-08-26"
-modified: "2018-08-26"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/panelists/master/_listings/gotomeeting/apis.md
 specificationVersion: "0.14"
 apis:
@@ -26,6 +26,42 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/panelists/master/_listings/gotomeeting/organizersorganizerkeywebinarswebinarkeypanelists-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/panelists/master/_listings/gotomeeting/organizersorganizerkeywebinarswebinarkeypanelists-get-openapi.md
+- name: Go To Webinar - Create Panelists
+  x-api-slug: organizersorganizerkeywebinarswebinarkeypanelists-post
+  description: Create panelists for a specified webinar
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/731-gotomeeting.jpg
+  humanURL: https://citrixonline.com
+  baseURL: https://api.citrixonline.com//G2W/rest
+  tags: Office, Meetings, Collaboration, Video Conferencing, Video Conferencing, SaaS,
+    Technology, Enterprise, API Provider, Meetings, Profiles, Conferences, Relative
+    Data, Service API, Networks
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/panelists/master/_listings/gotomeeting/organizersorganizerkeywebinarswebinarkeypanelists-post-openapi.md
+- name: Go To Webinar - Delete webinar panelist
+  x-api-slug: organizersorganizerkeywebinarswebinarkeypanelistspanelistkey-delete
+  description: Removes a webinar panelist.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/731-gotomeeting.jpg
+  humanURL: https://citrixonline.com
+  baseURL: https://api.citrixonline.com//G2W/rest
+  tags: Office, Meetings, Collaboration, Video Conferencing, Video Conferencing, SaaS,
+    Technology, Enterprise, API Provider, Meetings, Profiles, Conferences, Relative
+    Data, Service API, Networks
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/panelists/master/_listings/gotomeeting/organizersorganizerkeywebinarswebinarkeypanelistspanelistkey-delete-openapi.md
+- name: Go To Webinar - Resend panelist invitation
+  x-api-slug: organizersorganizerkeywebinarswebinarkeypanelistspanelistkeyresendinvitation-post
+  description: Resend the panelist invitation email.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/731-gotomeeting.jpg
+  humanURL: https://citrixonline.com
+  baseURL: https://api.citrixonline.com//G2W/rest
+  tags: Office, Meetings, Collaboration, Video Conferencing, Video Conferencing, SaaS,
+    Technology, Enterprise, API Provider, Meetings, Profiles, Conferences, Relative
+    Data, Service API, Networks
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/panelists/master/_listings/gotomeeting/organizersorganizerkeywebinarswebinarkeypanelistspanelistkeyresendinvitation-post-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://google.url.shortener.api.gallery.streamdata.io

@@ -1,17 +1,18 @@
+---
 swagger: "2.0"
 x-collection-name: GoToMeeting
-x-complete: 1
+x-complete: 0
 info:
-  title: SCIM
-  description: the-scim-api-lets-you-manage-users-in-your-organization--you-can-then-automate-the-provisioning-of-product-licenses-for-these-users-and-they-can-use-your-companys-single-signon-solution-through-an-identity-provider-
+  title: Go To Webinar Delete webinar panelist
+  description: Removes a webinar panelist.
   termsOfService: https://developer.citrixonline.com/terms-use
   contact:
     name: Developer Support
     url: https://developer.citrixonline.com
     email: developer-support@citrixonline.com
-  version: N/A
+  version: 1.0.0
 host: api.citrixonline.com
-basePath: /identity/v1
+basePath: /G2W/rest
 schemes:
 - http
 produces:
@@ -78,23 +79,17 @@ paths:
       - WebinarKey
       - Panelists
       - PanelistKey
-  /organizers/{organizerKey}/webinars/{webinarKey}/panelists/{panelistKey}/resendInvitation:
-    post:
-      summary: Resend panelist invitation
-      description: Resend the panelist invitation email.
-      operationId: resendPanelistInvitation
-      x-api-path-slug: organizersorganizerkeywebinarswebinarkeypanelistspanelistkeyresendinvitation-post
-      parameters:
-      - in: query
-        name: No Name
-      responses:
-        200:
-          description: OK
-      tags:
-      - Organizers
-      - OrganizerKey
-      - Webinars
-      - WebinarKey
-      - Panelists
-      - PanelistKey
-      - ResendInvitation
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
+---

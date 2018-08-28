@@ -3,8 +3,8 @@ swagger: "2.0"
 x-collection-name: GoToMeeting
 x-complete: 0
 info:
-  title: Go To Webinar Get webinar panelists
-  description: Retrieves all the panelists for a specific webinar.
+  title: Go To Webinar Create Panelists
+  description: Create panelists for a specified webinar
   termsOfService: https://developer.citrixonline.com/terms-use
   contact:
     name: Developer Support
@@ -27,6 +27,28 @@ paths:
       operationId: getPanelists
       x-api-path-slug: organizersorganizerkeywebinarswebinarkeypanelists-get
       parameters:
+      - in: query
+        name: No Name
+      responses:
+        200:
+          description: OK
+      tags:
+      - Organizers
+      - OrganizerKey
+      - Webinars
+      - WebinarKey
+      - Panelists
+    post:
+      summary: Create Panelists
+      description: Create panelists for a specified webinar
+      operationId: createPanelists
+      x-api-path-slug: organizersorganizerkeywebinarswebinarkeypanelists-post
+      parameters:
+      - in: body
+        name: body
+        description: Array of panelists
+        schema:
+          $ref: '#/definitions/holder'
       - in: query
         name: No Name
       responses:

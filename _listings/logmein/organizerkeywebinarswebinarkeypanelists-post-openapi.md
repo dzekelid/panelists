@@ -3,8 +3,8 @@ swagger: "2.0"
 x-collection-name: LogMeIn
 x-complete: 0
 info:
-  title: GoToWebinar Get webinar panelists
-  description: Get webinar panelists.
+  title: GoToWebinar Create Panelists
+  description: Create panelists.
   version: 1.0.0
 host: api.getgo.com
 basePath: /G2W/rest/organizers
@@ -35,6 +35,29 @@ paths:
           description: OK
       tags:
       - Webinar
+      - Panelists
+    post:
+      summary: Create Panelists
+      description: Create panelists.
+      operationId: WebinarsPanelistsByOrganizerKeyAndWebinarKeyPost
+      x-api-path-slug: organizerkeywebinarswebinarkeypanelists-post
+      parameters:
+      - in: header
+        name: Accept
+      - in: body
+        name: Body
+        schema:
+          $ref: '#/definitions/holder'
+      - in: header
+        name: Content-Type
+      - in: path
+        name: organizerKey
+      - in: path
+        name: webinarKey
+      responses:
+        200:
+          description: OK
+      tags:
       - Panelists
 x-streamrank:
   polling_total_time_average: 0
